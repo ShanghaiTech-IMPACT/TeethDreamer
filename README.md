@@ -81,4 +81,30 @@ blender --background
 Explanation: 
 `normal_render.py` only renders target normal images with fixed viewpoints set by `view16` dictionary.
 `color_render.py` renders condition images corresponding to segmented intra-oral photos taken by dentists and target color images.
-3. 
+3. Make sure you have a `pkl` file which includes a dictionary with `train`, `val` keys and corresponding lists including cases' ids such as `XXX_norm_lower` and `XXX_norm_upper`.
+4. Check if your directory of rendering data has following structures.
+```bash
+Data
+|-- target
+|-- normal
+|-- input
+|-- splits.pkl
+```
+Explanation: 
+The `target` folder is the directory of your rendered color images which is the argument `target_dir` in the script `color_render.py`.
+
+The `normal` folder is the directory of your rendered normal images which is the argument `target_dir` in the script `normal_render.py`.
+
+The `input` folder is the directory of your rendered condition images which is the argument `input_dir` in the script `color_render.py`.
+
+The `splits.pkl` file is the `pkl` file mentioned in the previous step.
+5. Finetune pretrained zero123 model on your own data.
+```angular2html
+python TeethDreamer.py -b configs/TeethDreamer.yaml \
+                       --gpus 0 \
+                       --finetune_from ckpt/zero123-xl.ckpt \
+                       data.target_dir=path/to/your/target/folder \
+                       data.input_dir=path/to/your/input/folder \
+                       data.uid_set_pkl=path/to/your/pkl/file \
+                       data.validation_dir=path/to/your/input/folder
+```
