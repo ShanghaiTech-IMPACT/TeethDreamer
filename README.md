@@ -1,10 +1,11 @@
-# TeethDreamer
-[MICCAI 2024] TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs
+# TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs
+Chenfan Xu, [Zhentao Liu](https://zhentao-liu.github.io/), Yuan Liu, Yulong Dou, Jiamin Wu, Jiepeng Wang, Minjiao Wang, [Dingggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>+</sup>.
+[[Paper](https://arxiv.org/abs/2407.11419)]
 
 - [x] Inference code and pretrained models.
 - [x] Training code.
 
-### Preparation
+### Getting started
 1. Install packages in `requirements.txt`. We test our model on a 40G A100 GPU with 11.6 CUDA and 1.12.0 pytorch. 
 ```angular2html
 conda create -n TeethDreamer
@@ -12,7 +13,7 @@ conda activate TeethDreamer
 pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 ```
-
+2. Download pretrained model [checkpoints]().
 ### Inference
 1. Make sure you have the following models.
 ```bash
