@@ -13,7 +13,7 @@ conda activate TeethDreamer
 pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 ```
-2. Download pretrained model [checkpoints](https://shanghaitecheducn-my.sharepoint.com/personal/xuchf2023_shanghaitech_edu_cn/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fxuchf2023%5Fshanghaitech%5Fedu%5Fcn%2FDocuments%2FProject%2FTeeth%5FRecon%2Fckpt).
+2. Download pretrained model [checkpoints](https://shanghaitecheducn-my.sharepoint.com/:f:/g/personal/xuchf2023_shanghaitech_edu_cn/Em8U10EGc09Om0SQKA-s6WoBiYX9hkm-0BWiReTFnwIsuQ?e=6vb0Xl)
 ### Inference
 1. Make sure you have the following models.
 ```bash
