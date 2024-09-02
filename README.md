@@ -1,5 +1,5 @@
 # TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs
-Chenfan Xu, [Zhentao Liu](https://zhentao-liu.github.io/), Yuan Liu, Yulong Dou, Jiamin Wu, Jiepeng Wang, Minjiao Wang, [Dingggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>+</sup>.
+Chenfan Xu*, [Zhentao Liu](https://zhentao-liu.github.io/)*, Yuan Liu, Yulong Dou, Jiamin Wu, Jiepeng Wang, Minjiao Wang, [Dingggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>+</sup>.
 [[Paper](https://arxiv.org/abs/2407.11419)]
 
 - [x] Inference code and pretrained models.
