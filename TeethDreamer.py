@@ -320,7 +320,6 @@ if __name__ == "__main__":
     config.data.params.seed = opt.seed
     data = instantiate_from_config(config.data)
     data.prepare_data()
-    data.setup('fit')
 
     ####################lr#####################
     bs, base_lr = config.data.params.batch_size, config.model.base_learning_rate
@@ -335,7 +334,9 @@ if __name__ == "__main__":
     # trainer.optimizers().param_groups[0]['capturable'] = True
     # run
     if opt.test=="":
+        data.setup('fit')
         trainer.fit(model, data)
     else:
+        data.setup('test')
         model.names = os.listdir(data.test_dir)
         trainer.test(model, data, ckpt_path=opt.test)
