@@ -33,6 +33,7 @@ python seg_teeth.py --img directory/of/your/intra-oral/images \
                     --suffix suffix/of/your/image/files
 ```
 Tips: You need segment upper teeth for the first four intra-oral images and then lower teeth for the last four images. If unexpected regions are segmented, you can click the right mouse button to label the irrelevant area.
+
 3. Generate color and normal images of eight viewpoints.
 ```angular2html
 python TeethDreamer.py -b configs/TeethDreamer.yaml \
