@@ -40,9 +40,9 @@ def get_parser(**parser_kwargs):
     parser.add_argument("-c", "--ckptdir", type=str, default="models", help="directory for checkpoint data", )
     parser.add_argument("-s", "--seed", type=int, default=6033, help="seed for seed_everything", )
     parser.add_argument("--finetune_from", type=str, default="", help="path to checkpoint to load model state from" )
-    parser.add_argument("--resume_from", type=str, default="")
-    parser.add_argument("--output", type=str, default="")
-    parser.add_argument("--test", type=str, default="")
+    parser.add_argument("--resume_from", type=str, default="", help="path to checkpoint to resume training")
+    parser.add_argument("--output", type=str, default="", help="path to store generated images")
+    parser.add_argument("--test", type=str, default="", help="path to checkpoint for inference")
     parser.add_argument("--gpus", type=str, default='0,')
     return parser
 
