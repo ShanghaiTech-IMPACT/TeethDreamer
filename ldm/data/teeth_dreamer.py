@@ -222,7 +222,7 @@ class TeethDreamerTestData(Dataset):
         self.image_dir = Path(image_dir)
         self.crop_size = crop_size
 
-        self.uids = np.array(os.listdir(image_dir))[:10]
+        self.uids = np.array(os.listdir(image_dir))
         self.num_images = 16
         self.normal_predict = normal_predict
         self.single_cond = single_cond
