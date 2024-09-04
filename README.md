@@ -5,6 +5,11 @@ Chenfan Xu*, [Zhentao Liu](https://zhentao-liu.github.io/)*, Yuan Liu, Yulong Do
 - [x] Inference code and pretrained models.
 - [x] Training code.
 
+### Demo
+- [x] Five intra-oral photos in `example/oral`.
+- [x] Segmented teeth images in `example/teeth`.
+- [x] Generated [images](https://shanghaitecheducn-my.sharepoint.com/:f:/g/personal/xuchf2023_shanghaitech_edu_cn/EsjO23PTzMtJmk-XpkMh01oBEfaui-ZZ_5afbU1t9Ijc6g?e=4aG5ZS) and [Reconstruction](https://shanghaitecheducn-my.sharepoint.com/:f:/g/personal/xuchf2023_shanghaitech_edu_cn/EuqQwcmmWH9NsdaeDYnO17kB7z7PDRP_YLzQ_cm-OOQxDQ?e=F2AigU).
+
 ### Getting started
 1. Install packages in `requirements.txt`. We test our model on a 40G A100 GPU with 11.6 CUDA and 1.12.0 pytorch. 
 ```angular2html
