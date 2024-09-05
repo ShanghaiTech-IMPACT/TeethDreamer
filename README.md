@@ -1,6 +1,7 @@
 # TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs
 Chenfan Xu*, [Zhentao Liu](https://zhentao-liu.github.io/)*, Yuan Liu, Yulong Dou, Jiamin Wu, Jiepeng Wang, Minjiao Wang, [Dingggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>+</sup>.
-[[Paper](https://arxiv.org/abs/2407.11419)]
+
+## [Paper](https://arxiv.org/abs/2407.11419)
 
 - [x] Inference code and pretrained models.
 - [x] Training code.
@@ -121,4 +122,26 @@ python TeethDreamer.py -b configs/TeethDreamer.yaml \
                        data.input_dir=path/to/your/input/folder \
                        data.uid_set_pkl=path/to/your/pkl/file \
                        data.validation_dir=path/to/your/input/folder
+```
+
+## Acknowledgement
+
+We have intensively borrow codes from the following repositories. Many thanks to the authors for sharing their codes.
+
+- [stable diffusion](https://github.com/CompVis/stable-diffusion)
+- [Zero123](https://github.com/cvlab-columbia/zero123)
+- [SyncDreamer](https://github.com/liuyuan-pal/SyncDreamer)
+- [Wonder3D](https://github.com/xxlong0/Wonder3D)
+- [Instant-nsr-pl](https://github.com/bennyguo/instant-nsr-pl)
+- [Segment-Anything](https://github.com/facebookresearch/segment-anything)
+
+## Citation
+If you find this repository useful in your project, please cite the following work. :)
+```
+@article{xu2024teethdreamer,
+  title={TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs},
+  author={Xu, Chenfan and Liu, Zhentao and Liu, Yuan and Dou, Yulong and Wu, Jiamin and Wang, Jiepeng and Wang, Minjiao and Shen, Dinggang and Cui, Zhiming},
+  journal={arXiv preprint arXiv:2407.11419},
+  year={2024}
+}
 ```
