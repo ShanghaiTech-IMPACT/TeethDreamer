@@ -103,7 +103,7 @@ Data
 |-- target
 |-- normal
 |-- input
-|-- splits.pkl
+|-- mv-splits.pkl
 ```
 Explanation: 
 The `target` folder is the directory of your rendered color images which is the argument `target_dir` in the script `color_render.py`.
@@ -112,7 +112,7 @@ The `normal` folder is the directory of your rendered normal images which is the
 
 The `input` folder is the directory of your rendered condition images which is the argument `input_dir` in the script `color_render.py`.
 
-The `splits.pkl` file is the `pkl` file mentioned in the previous step.
+The `mv-splits.pkl` file is the `pkl` file mentioned in the previous step.
 5. Finetune pretrained zero123 model on your own data.
 ```angular2html
 python TeethDreamer.py -b configs/TeethDreamer.yaml \
