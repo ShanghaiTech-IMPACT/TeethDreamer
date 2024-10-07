@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #B6486F;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+.paper-title {
+    padding: 16px 0px 16px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.col-1 {
+     width: 100%;
+     float: left;
+}
+.row, .author-row, .affil-row {
+     overflow: auto;
+}
+.author-row, .affil-row {
+    font-size: 26px;
+}
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 26px;
+}
+.affil-row {
+    margin-top: 16px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: #666;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+video {
+    display: block;
+    margin: auto;
+}
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #B6486F;
+  color: white !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.paper-btn:hover {
+    opacity: 0.85;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.venue {
+    /*color: #B6486F;*/
+    font-size: 30px;
+
+}
+
+</style>
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+    <head>
+        <title>TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs</title>
+        <meta property="og:description" content="TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@ArashVahdat">
+        <meta name="twitter:title" content="TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs">
+        <meta name="twitter:description" content="TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs">
+        <meta name="twitter:image" content="">
+    </head>
+
+ <body>
+<div class="container">
+    <div class="paper-title">
+      <h1>TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs</h1>
+    </div>
+
+    <div id="authors">
+    	<center>
+        <div class="author-row">Chenfan Xu*, Zhentao Liu*, Yuan Liu, Yulong Dou, Jiamin Wu, Jiepeng Wang, Minjiao Wang, Dingggang Shen, and Zhiming Cui+.
+            <div class="col-4 text-center">Chenfan Xu<sup>1*</sup></div>
+            <div class="col-4 text-center"><a href="https://zhentao-liu.github.io/">Zhentao Liu</a><sup>1*</sup></div>
+            <div class="col-4 text-center">Yuan Liu<sup>2</sup></div>
+            <div class="col-4 text-center">Yulong Dou<sup>1</sup></div>
+            <div class="col-3 text-center">Jiamin Wu<sup>3</sup></div>
+            <div class="col-3 text-center">Jiepeng Wang<sup>1,2</sup></div>
+            <div class="col-3 text-center">Minjiao Wang<sup>4</sup></div>
+          <div class="col-3 text-center"><a href="https://idea.bme.shanghaitech.edu.cn/">Dingggang Shen</a><sup>1,5,6</sup></div>
+          <div class="col-3 text-center"><a href="https://shanghaitech-impact.github.io/">Zhiming Cui</a><sup>1+</sup></div>
+        </div> 
+        <center>
+            <table align=center width=800px>
+            <tr>
+                <tr align=center width=800px>
+                <center>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>1</sup> School of Biomedical Engineering & State Key Laboratory of Advanced Medical Materials and Devices, ShanghaiTech University, Shanghai, China</span>
+                </div>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>2</sup>Department of Computer Science, The University of Hong Kong, Hong Kong, China</span>
+                </div>
+                </center>
+                </tr>
+
+                <tr align=center width=800px>
+                <center>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>3</sup>Applied Oral Sciences & Community Dental Care, Faculty of Dentistry, The University of Hong Kong, Hong Kong, China</span>
+                </div>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>4</sup>Shanghai Ninth People’s Hospital, School of Medicine, Shanghai JiaoTong University, Shanghai, China</span>
+                </div>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>5</sup>Shanghai Ninth People's Hospital, Shanghai Jiao Tong University, Shanghai, China</span>
+                </div>
+                <div class="col-1 text-center">
+                    <span style="font-size:20px"><sup>6</sup>Shanghai United Imaging Intelligence Co. Ltd., Shanghai, China</span>
+                </div>
+                </center>
+                </tr>
+            </tr>
+            </table>
+        </center>
+
+        </center>
+        <br>
+        
+        <div class="affil-row">
+            <div class="venue text-center"><b></b></div>
+        </div>
+        <br>
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+            <a class="paper-btn" href="https://arxiv.org/abs/2407.11419">
+                <span class="material-icons"></span> 
+                 Paper
+            </a>
+            <a class="paper-btn" href="https://github.com/ShanghaiTech-IMPACT/TeethDreamer">
+                <span class="material-icons"></span> 
+                 Code
+            </a>
+        </div></div>
+    </div>
+
+
+
+
+<!--     <section id="news">
+        <h2>News</h2>
+        <hr>
+        <div class="row">
+            <div><span class="material-icons"> event </span> [09/2024] Dataset released!</div>
+            <div><span class="material-icons"> event </span> [07/2024] Source code released!</div>
+            <div><span class="material-icons"> event </span> [06/2024] Our paper is accepted by MICCAI 2024!</div>
+        </div>
+    </section> -->
+
+    <section id="abstract"/>
+        <h2>Abstract</h2>
+        <hr>
+        <center><img width="100%" src="./imgs/teaser.png" style="margin-top: 20px; margin-bottom: 3px;"></center>
+        <p class="caption">
+            This flowchart illustrates our algorithm for reconstructing 3D dental models
+            (c) from multiple intra-oral photographs (a). Initially, we synthesize multi-view images
+            and normal maps (b) using the 3D dental model from our dataset. Subsequently, we
+            train a diffusion network to generate these images and maps directly from the intra-oral
+            photographs, culminating in the reconstruction of the target 3D dental models.
+        </p><p class="caption">
+        <div class="flex-row">
+            <p>
+              Orthodontic treatment usually requires regular face-to-face
+              examinations to monitor dental conditions of the patients. When in
+              person diagnosis is not feasible, an alternative is to utilize five intra-oral
+               photographs for remote dental monitoring. However, it lacks of 3D in
+              formation, and how to reconstruct 3D dental models from such sparse
+               view photographs is a challenging problem. In this study, we propose
+               a 3D teeth reconstruction framework, named TeethDreamer, aiming to
+               restore the shape and position of the upper and lower teeth. Given
+               f
+               ive intra-oral photographs, our approach first leverages a large diffu
+              sion model’s prior knowledge to generate novel multi-view images with
+               known poses to address sparse inputs and then reconstructs high-quality
+               3D teeth models by neural surface reconstruction. To ensure the 3D con
+              sistency across generated views, we integrate a 3D-aware feature atten
+              tion mechanism in the reverse diffusion process. Moreover, a geometry
+              aware normal loss is incorporated into the teeth reconstruction process
+               to enhance geometry accuracy. Extensive experiments demonstrate the
+               superiority of our method over current state-of-the-arts, giving the po
+              tential to monitor orthodontic treatment remotely. Our code is availableat at 
+              <a href="https://github.com/ShanghaiTech-IMPACT/TeethDreamer">https://github.com/ShanghaiTech-IMPACT/TeethDreamer</a>.</p>
+        </div>
+    </section>
+
+    <section id="Methodology"/>
+        <h2>Methodology</h2>
+        <hr>
+        <center><img width="100%" src="./imgs/method.png" style="margin-top: 20px; margin-bottom: 3px;"></center>
+    </section>
+
+<!--     <section id="dataset"/>
+        <h2>Dataset</h2>
+        <hr>
+        <div class="flex-row">
+            <p>
+                For the task of cephalometric landmark detection across age groups, we collected a new benchmark dataset, named CephAdoAdu, with both adolescent and adult cases,
+                distinguishing it from existing datasets that solely consist of either adolescent or adult cases. 
+                CephAdoAdu has a total of 1000 (500 adult cases, 500 adolescent cases) cephalometric X-ray images, acquired from eight clinical centers. 
+                Every cephalometric image underwent manual annotations to mark 10 typical landmarks, by an experienced dental radiologist with over ten years of expertise.
+
+                In clinical practice, the templates used by different regions and hospitals vary significantly in the number and definition of landmarks(e.g. Vienna template, Huaxi template). 
+                For CephAdoAdu annotation, we consulted experienced dentists and selected landmarks based on two criteria: 
+                1) they are defined in all templates, and 
+                2) they are challenging to detect across ages. 
+                Ultimately, we selected 10 typical target landmarks. </p>
+            <p>
+                Our new dataset has two advantages over existing ones: 
+                1) a more clinically practical coverage of subjects across different age groups; 
+                2) a larger number of annotated images, ensuring a comprehensive and faithful model evaluation. 
+                The whole dataset is randomly divided into training set (400 images), validation set (300 images), and testing set (300 images).
+                Notice that our data split is evenly performed in terms of the adult and adolescent cases, 
+                and adolescents are defined by the presence of baby teeth, regardless of age, while adults by the absence of baby teeth. 
+            </p>
+            <p>
+                ★ Our dataset is available for reserach purpose only. To apply for CephAdoAdu dataset, please visit the <a href="https://github.com/ShanghaiTech-IMPACT/CeLDA/">Github repository</a>.
+            </p>
+        </div>
+    </section> -->
+
+
+
+    <section id="results"/>
+        <h2>Results</h2>
+        <hr>
+        <center><img width="100%" src="./imgs/surface.png" style="margin-top: 20px; margin-bottom: 3px;"></center>
+        <p class="caption">
+            Qualitative comparisons of reconstructed 3D teeth with other baselines, demon
+            strating our results with complete shapes and geometric details. (GT: ground truth)
+        </p><p class="caption">
+        <center><img width="100%" src="./imgs/generation.png" style="margin-top: 20px; margin-bottom: 3px;"></center>
+        <p class="caption">
+            Qualitative comparisons of generated images with other baselines, where our
+            generations are closely aligned with ground truth. (GT: ground truth)
+        </p><p class="caption">
+          <center><img width="100%" src="./imgs/comparison.png" style="margin-top: 20px; margin-bottom: 3px;"></center>
+        <p class="caption">
+            The quantitative comparison with other baselines and ablated solutions in
+            color image generation and teeth reconstruction.
+        </p><p class="caption">
+    </section>
+
+
+    <section id="bibtex">
+        <h2>Citation</h2>
+        <hr>
+        <pre><code>@article{xu2024teethdreamer,
+                    title={TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs},
+                    author={Xu, Chenfan and Liu, Zhentao and Liu, Yuan and Dou, Yulong and Wu, Jiamin and Wang, Jiepeng and Wang, Minjiao and Shen, Dinggang and Cui, Zhiming},
+                    journal={arXiv preprint arXiv:2407.11419},
+                    year={2024}
+                  }
+        </code></pre>
+    </section>
