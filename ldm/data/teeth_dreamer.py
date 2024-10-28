@@ -242,7 +242,7 @@ class TeethDreamerTestData(Dataset):
         else:
             ext=['_front', '_left', '_right', '_down']
 
-        input_img_fn = [os.path.join(self.image_dir, name, f'{self.view_idx[index][i]:03d}.png') for i in range(4)]
+        input_img_fn = [os.path.join(self.image_dir, name, f'{i:03d}.png') for i in range(4)]
         meta = read_pickle('meta_info/cond.pkl')
         if 'upper' in name:
             input_az=np.array([meta[1][3]]).astype(np.float32)
