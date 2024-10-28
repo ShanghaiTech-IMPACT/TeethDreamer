@@ -138,10 +138,15 @@ We have intensively borrow codes from the following repositories. Many thanks to
 ## Citation
 If you find this repository useful in your project, please cite the following work. :)
 ```
-@article{xu2024teethdreamer,
-  title={TeethDreamer: 3D Teeth Reconstruction from Five Intra-oral Photographs},
-  author={Xu, Chenfan and Liu, Zhentao and Liu, Yuan and Dou, Yulong and Wu, Jiamin and Wang, Jiepeng and Wang, Minjiao and Shen, Dinggang and Cui, Zhiming},
-  journal={arXiv preprint arXiv:2407.11419},
-  year={2024}
+@InProceedings{10.1007/978-3-031-72104-5_68,
+author="Xu, Chenfan and Liu, Zhentao and Liu, Yuan and Dou, Yulong and Wu, Jiamin and Wang, Jiepeng and Wang, Minjiao and Shen, Dinggang and Cui, Zhiming",
+editor="Linguraru, Marius George and Dou, Qi and Feragen, Aasa and Giannarou, Stamatia and Glocker, Ben and Lekadir, Karim and Schnabel, Julia A.",
+title="TeethDreamer: 3D Teeth Reconstruction from Five Intra-Oral Photographs",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="712--721",
+isbn="978-3-031-72104-5"
 }
 ```
