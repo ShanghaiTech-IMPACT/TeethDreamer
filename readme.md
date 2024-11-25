@@ -5,6 +5,7 @@ Chenfan Xu*, [Zhentao Liu](https://zhentao-liu.github.io/)*, Yuan Liu, Yulong Do
 
 - [x] Inference code and pretrained models.
 - [x] Training code.
+- [x] [Rendering dataset](https://pan.baidu.com/s/1uX-JB4GCKdtOBjYbkrFylg?pwd=wuhp) with 16 views for each case.
 
 ### Demo
 - [x] Five intra-oral photos in `example/oral`.
